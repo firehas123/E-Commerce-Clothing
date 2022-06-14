@@ -65,9 +65,18 @@ const MenuItem = styled.div`
   font-size: 14px;
   cursor: pointer;
   margin-left: 25px;
+  text-decoration: none;
+  visibility: visible;
+  
   ${mobile({ fontSize: "12px", marginLeft: "10px" })}
 `;
 
+const UserName = styled.div`
+  visibility: hidden;
+`
+const Item = styled.div `
+    
+`
 const Navbar = () => {
   const quantity = useSelector(state=>state.cart.quantity)
   return (
@@ -81,11 +90,20 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>LAMA.</Logo>
+          <Logo>Lama.</Logo>
         </Center>
         <Right>
+          <UserName>
+            <Item>
+
+            </Item>
+          </UserName>
+          <Link to = "/register">
           <MenuItem>REGISTER</MenuItem>
+          </Link>
+          <Link to = "/login">
           <MenuItem>SIGN IN</MenuItem>
+          </Link>
           <Link to="/cart">
           <MenuItem>
             <Badge badgeContent={quantity} color="primary">
