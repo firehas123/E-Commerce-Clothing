@@ -1,4 +1,4 @@
-# Chic Threads: A Modern E-Commerce Clothing Platform
+# A Modern E-Commerce Clothing Platform
 
 ## Description
 Chic Threads is a full-stack e-commerce platform designed for the modern retail landscape. This project leverages the power of MERN stack to deliver a seamless online shopping experience, allowing users to browse, select, and purchase clothing items efficiently.
